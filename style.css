@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 head {
     color: #89cff0;
 }
 
 p {
     color: blue
+=======
+head {
+    color: #89cff0;
+}
+
+p {
+    color: red
+>>>>>>> 058db2e176210acafcb551b78581f56e50b8d561
 }
