@@ -1,32 +1,93 @@
-body{
+ul {
     margin: 0;
-    padding: 0;
+    padding:0;
 }
 
-h1{
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
     text-align: center;
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin: 0;
+    padding: 0;
     color: whitesmoke;
     font-family: 'Montserrat';
-    font-size: 100;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-align: center;
 }
 
 nav li{
-    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    font-family: 'Sans Serif';
     display: inline;
     float: right;
-    margin: 0;
-    padding: 0 10px;
+    padding: 20px;
 }
 
 nav a{
-    color: whitesmoke;
+    margin: 0;
+    padding: 8px 15px;
+    font-family: "Montserrat";
+    color: white;
     text-decoration: none!important;
 }
 
-.hero {
-    
-    padding: 500px;
-    background-image: url(../weeyongjie/heroimage.jpg);
+nav a:hover {
+    background-color:#e12120;
+    border-radius: 5px;
+    transition: 0.7s
+}
+
+.hero-image {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(heroimage.jpg);
     background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+#para1 {
+    padding: 50px;
+    margin: 50px;
+    font-family: 'Montserrat';
+}
+
+#para2 {
+    padding: 10px;
+    font-family: 'Montserrat';
+}
+
+#para3 {
+    padding: 10px;
+    font-family: 'Montserrat';
+}
+
+#para4 {
+    padding: 10px;
+    font-family: 'Montserrat';
+}
+
+#para5 {
+    padding: 10px;
+    font-family: 'Montserrat';
 }
