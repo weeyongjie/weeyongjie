@@ -1,6 +1,32 @@
-head {
-    color: #89cff0;
+body{
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    color: blue
+h1{
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    font-family: 'Montserrat';
+    font-size: 100;
+}
+
+nav li{
+    font-family: 'Montserrat';
+    display: inline;
+    float: right;
+    margin: 0;
+    padding: 0 10px;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none!important;
+}
+
+.hero {
+    
+    padding: 500px;
+    background-image: url(../weeyongjie/heroimage.jpg);
+    background-size: cover;
+}
