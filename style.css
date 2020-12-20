@@ -49,6 +49,7 @@ nav a{
     text-decoration: none!important;
 }
 
+<<<<<<< HEAD
 nav a:hover {
     background-color:#e12120;
     border-radius: 5px;
@@ -91,3 +92,10 @@ nav a:hover {
     padding: 10px;
     font-family: 'Montserrat';
 }
+=======
+.hero {
+    padding: 500px;
+    background-image: url(heroimage.jpg);
+    background-size: cover;
+}
+>>>>>>> b27b25e98ad6df5afe7f214f205ec9d5fdfcc336
