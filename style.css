@@ -25,8 +25,7 @@ nav a{
 }
 
 .hero {
-    
     padding: 500px;
-    background-image: url(../heroimage.jpg);
+    background-image: url(heroimage.jpg);
     background-size: cover;
 }
