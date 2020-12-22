@@ -113,7 +113,8 @@ nav a:hover {
     display: table-cell;
     width: 40%;
     height: 70vh;
-    filter: grayscale(100%);
+    background-position: center;
+    filter: grayscale(80%);
     -webkit-background-size: cover;
     -moz-background-size:  cover;
     -o-background-size: cover;
@@ -124,10 +125,13 @@ nav a:hover {
     width: 60%;
     display: table-cell;
     position: relative;
-    padding: 120px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    padding: 180px;
+    text-align: justify;
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 31px;
+    color: #808080;
 }
 
 .resume-button {
