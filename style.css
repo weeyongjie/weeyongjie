@@ -127,7 +127,7 @@ nav a:hover {
     position: relative;
     padding: 180px;
     text-align: justify;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     letter-spacing: 0.05em;
     line-height: 31px;
@@ -210,6 +210,10 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.fa-cog {
+    color: black;
 }
 
 hr {
