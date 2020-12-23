@@ -5,9 +5,9 @@
         <meta charset='utf-8'>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="photo/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="photo/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="photo/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">   
         
         <title>Wee Yong Jie | Tech Enthusiast</title>
@@ -17,18 +17,18 @@
 
 <body>
         <div>
-            <nav>
+            <nav style='background-color: black; padding-top: 20px'>
                 <ul>
                     <li><a href='#'>Contact</a></li>
-                    <li><a href='#'>Blog</a></li>
-                    <li><a href='#'>Portfolio</a></li>
-                    <li><a href='#'>About</a></li>
+                    <li><a href='life.html'>Life</a></li>
+                    <li><a href='portfolio.html'>Portfolio</a></li>
+                    <li><a href='index.html'>About</a></li>
                 </ul>
             </nav>
         </div>
         
-       <div class='hero-image'>
-            <h1>Hello I'm Yong Jie<span class="wave">👋</span></h1>
+       <div class='hero-image-home'>
+            <h1 class='intro'>Hello I'm Yong Jie<span class="wave">👋</span></h1>
         </div>
 
    
@@ -51,8 +51,8 @@
     <div class='work'>
         <table class='worktable'>
             <tr>
-                <td><b>Work Experience</b></td>
-                <td> 
+                <td class='workcell'><b>Work Experience</b></td>
+                <td class='workcell'> 
                     <i>Mar 20 - Jul 20</i><br>
                         Product Management Intern<br>
                         Circles.Life
@@ -69,8 +69,8 @@
                         APAC CEO Office Intern<br>
                         Aon plc
                 </td>
-                <td><b>Education</b></td>
-                <td>
+                <td class='workcell'><b>Education</b></td>
+                <td class='workcell'>
                 <i> 2017 - Present</i><br>
                     National University of Singapore<br>
                     Bachelor of Social Sciences<br>
@@ -82,8 +82,8 @@
                 </td>
             </tr>
             <tr>
-                <td><b>Competency</b></td>
-                <td>
+                <td class='workcell'><b>Competency</b></td>
+                <td class='workcell'>
                     Product Management<br>
                     Product Marketing<br>
                     Project Management<br>
@@ -91,8 +91,8 @@
                     Market Research<br>
                     UX Design
                 </td>
-                <td><b>Technical Skills</b></td>
-                <td>
+                <td class='workcell'><b>Technical Skills</b></td>
+                <td class='workcell'>
                     SQL<br>
                     Python<br>
                     R Programming<br>
@@ -106,9 +106,9 @@
                 </td>
             </tr>
         </table>
-<hr>
     </div>
-
+<hr>
+    <p id='medium'><b>Medium Articles</b></p>
 
     <div id="medium-widget"></div>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
