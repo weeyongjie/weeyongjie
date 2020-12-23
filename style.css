@@ -213,21 +213,36 @@ p {
     height: 20vh;
     margin: 0;
     padding: 0;
-    display: table-cell;
+    display: table-row;
     vertical-align: middle;
     font-family: 'Montserrat', sans-serif;
 }
 
-.column {
-    float: left;
+.column1 {
+    display: table-cell;
     padding: 5%;
-    width: 20%;
+    width: 25%;
+}
+
+.column2 {
+    display: table-cell;
+    padding: 5%;
+    width: 25%;
+}
+
+.column3 {
+    display: table-cell;
+    padding: 5%;
+    width: 50%;
+    text-align: justify;
 }
 
 footer {
     background-color: #FAFAFA;
     width: 100%;
     height: 2vh;
+    margin: 0;
+    padding: 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
@@ -237,10 +252,6 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
-}
-
-.fa-cog {
-    color: black;
 }
 
 hr {
