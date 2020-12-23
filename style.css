@@ -102,6 +102,27 @@ nav a:hover {
     background-position:bottom;
     align-items: center;
 }
+ 
+ .hero-image:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 80vh;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: url(snow1.png), url(snow2.png), url(snow3.png);
+    animation: snow 20s linear infinite;
+ }
+ 
+ @keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 1000px 1000px, 200px 400px, -100px 300px;}
+ }
 
 .about-me {
     width: 100%;
