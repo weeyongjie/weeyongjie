@@ -17,17 +17,22 @@
 
 
 <body>
-        <div>
-            <nav style='background-color: black; padding-top: 20px'>
-                <ul>
-                    <li><a href='#'>Contact</a></li>
-                    <li><a href='life.html'>Life</a></li>
-                    <li><a href='portfolio.html'>Portfolio</a></li>
+
+    <nav role='navigation'>
+        <div id='menuToggle'>
+            <input type='checkbox' />
+            <span></span>
+            <span></span>
+            <span></span>
+                <ul id='menu'>
                     <li><a href='index.html'>About</a></li>
+                    <li><a href='portfolio.html'>Portfolio</a></li>
+                    <li><a href='life.html'>Life</a></li>
+                    <li><a href='#'>Contact</a></li>
                 </ul>
-            </nav>
         </div>
-        
+    </nav>
+
        <div class='hero-image-home'>
             <h1 class='intro'>Hello I'm Yong Jie<span class="wave">👋</span></h1>
         </div>
@@ -113,7 +118,7 @@
 
     <div id="medium-widget"></div>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@weeyongjie","postsPerLine":2,"limit":8,"picture":"big","fields":["description","claps","publishAt"],"ratio":"original"}})</script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@weeyongjie","postsPerLine":1,"limit":8,"picture":"big","fields":["description","claps","publishAt"],"ratio":"original"}})</script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -121,27 +126,23 @@
 <hr>
 
     <div class='row'>
-        <div class='column1'> <p><b>Contact</b></p> <br> <p style='font-size:14px'>Email: weeyongjie@u.nus.edu</style></div>
-        <div class='column2'><p><b>Follow Me</b> <br> <br>
+        <div class='column'> <p><b>Contact</b></p> <br> <p style='font-size:12px'>Email: weeyongjie@u.nus.edu</style></div>
+        <div class='column'><p><b>Follow Me</b> <br> <br>
             <a style="padding-right:12px;" href='https://www.linkedin.com/in/wee-yong-jie/'><i class="fab fa-linkedin-in" style='color:#1B1B1B'></i></a>
             <a style="padding-right:12px;" href='https://medium.com/@weeyongjie'><i class="fab fa-medium-m" style='color:#1B1B1B'></i></a>
             <a style="padding-right:12px;" href='https://www.facebook.com/yongjie.wee.1996/'> <i class="fab fa-facebook-f" style='color:#1B1B1B'></i></a>
             <a style="padding-right:12px;" href='https://www.instagram.com/yj_wee/'> <i class="fab fa-instagram" style='color:#1B1B1B'></i></a>
             </p> 
             </div>
-        <div class='column3'><p><i style='line-height: 30px' style='letter-spacing: 0.1em;'>“A person who is happy is not because everything is right in his life,
+        <div class='column'><p><i style='line-height: 30px' style='letter-spacing: 0.1em;'>“A person who is happy is not because everything is right in his life,
              he is happy because his attitude towards everything in his life is right.” 
-                                    <br><br>- Sundar Pichai</i></p></div>
+                                    <br>- Sundar Pichai</i></p></div>
     </div>
 
 </body>
 
 <footer>
-    <div class="footercontainer">
         <p class="copyright">© Wee Yong Jie 2020</p>
-    </div>
-
-
 </footer>
 
 </html>
