@@ -30,8 +30,8 @@ html {
 #menuToggle input
 {
   display: block;
-  width: 5vw;
-  height: 5vh;
+  width: 35px;
+  height: 22px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -76,7 +76,7 @@ html {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: white;
 }
 
 /*
@@ -93,7 +93,8 @@ html {
  */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
 }
 
 /*
