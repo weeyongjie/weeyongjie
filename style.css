@@ -277,8 +277,8 @@ body {
         border-right: solid 2px transparent;
         white-space: nowrap;
         overflow: hidden;
-        animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
-                    animated-cursor 2.5s steps(20,end);
+/*        animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
+                    animated-cursor 2.5s steps(20,end);*/
     }
     
     .intro-explain {
@@ -295,9 +295,9 @@ body {
         border-right: solid 2px transparent;
         white-space: nowrap;
         overflow: hidden;
-        animation: animated-text2 2s steps(29,end) 0.5s 1 normal both,
+/*        animation: animated-text2 2s steps(29,end) 0.5s 1 normal both,
                     animated-cursor 2.5s steps(20,end) infinite;
-        animation-delay: 2.5s;
+        animation-delay: 2.5s;*/
     }
     
     @keyframes animated-text {
