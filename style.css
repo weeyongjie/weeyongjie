@@ -146,8 +146,9 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url(photo/heroimage.jpg);
+    filter:grayscale(50%);
     background-size: cover;
     background-position:bottom;
     align-items: center;
@@ -158,21 +159,21 @@ body {
     display: block;
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     z-index: 2;
     top: 0px;
     left: 0px;
     right: 0;
     bottom: 100px;
     pointer-events: none;
-    background-image: url(photo/snow1.png), url(photo/snow2.png), url(photo/snow3.png);
+    background-image: url(photo/snow2.png), url(photo/snow3.png);
     animation: snow 20s linear infinite;
  }
  
  @keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 1000px 1000px, 200px 400px, -100px 300px;}
+  0% {background-position: 0px 0px, 0px 0px;}
+  50% {background-position: 100px 200px, -100px 150px;}
+  100% {background-position: 200px 400px, -100px 300px;}
  }
 
 .intro {
@@ -180,30 +181,56 @@ body {
     vertical-align: middle;
     position: absolute;
     margin: 0;
-    top: 50%;
+    top: 40%;
     left: 35%;
-    color: whitesmoke;
+    color: snow;
     font-family: 'Montserrat', sans-serif;
     font-size: 3vw;
     font-weight: 700;
-    border-right: solid 3px #e73f33;
+    border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
+    animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
+                animated-cursor 2.5s steps(20,end);
 }
 
-.intro {
-    animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
-                animated-cursor 600ms steps(29,end) infinite;
+.intro-explain {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    margin: 0;
+    top: 60%;
+    left: 32%;
+    color: snow;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    border-right: solid 2px transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animated-text2 2s steps(29,end) 0.5s 1 normal both,
+                animated-cursor 2.5s steps(20,end) infinite;
+    animation-delay: 2.5s;
 }
 
 @keyframes animated-text {
     from{width: 0;}
-    to{width: 30%}
+    to{width: 30%};
 }
 
 @keyframes animated-cursor {
-    from{border-right-color:#e73f33;}
-    to{border-right-color: transparent;}
+    from, 
+    to {
+        border-right-color: transparent
+    }
+    50% {
+        border-right-color: snow
+    }
+}
+
+@keyframes animated-text2 {
+    from{width: 0;}
+    to{width: 36%}
 }
 
 .wave {
@@ -226,6 +253,65 @@ body {
   100% { transform: rotate( 0.0deg) }
 }
 
+
+@media (max-width: 1024px) {
+    .intro {
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        margin: 0;
+        top: 40%;
+        left: 15%;
+        color: snow;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 7vw;
+        font-weight: 700;
+        border-right: solid 2px transparent;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
+                    animated-cursor 2.5s steps(20,end);
+    }
+    
+    .intro-explain {
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 15%;
+        color: snow;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vw;
+        font-weight: 400;
+        border-right: solid 2px transparent;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: animated-text2 2s steps(29,end) 0.5s 1 normal both,
+                    animated-cursor 2.5s steps(20,end) infinite;
+        animation-delay: 2.5s;
+    }
+    
+    @keyframes animated-text {
+        from{width: 0;}
+        to{width: 70%}
+    }
+
+    @keyframes animated-text2 {
+        from{width: 0;}
+        to{width: 70%}
+    }
+}
+
+.down-arrow {
+    display: block;
+    width: 10vw;
+    height: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .about-me {
     width: 100%;
@@ -382,8 +468,8 @@ hr {
     margin-bottom: 10vh;
     text-align: center;
     border: none;
-    color: #ECECEC;
-    background-color: #ECECEC;
+    color: #C1C1C1;
+    background-color: #C1C1C1;
     height: 0.5px;
 }
 
