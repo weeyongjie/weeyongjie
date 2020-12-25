@@ -150,11 +150,11 @@ body {
 .hero-image-home {
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     height: 80vh;
     background-image: url(photo/heroimage.jpg);
     filter:grayscale(50%);
-    background-size: contain;
+    background-size:auto;
     background-position:center;
     -webkit-background-size: cover;
     -moz-background-size:  cover;
