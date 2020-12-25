@@ -154,7 +154,7 @@ body {
     height: 80vh;
     background-image: url(photo/heroimage.jpg);
     filter:grayscale(50%);
-    background-size: cover;
+    background-size: contain;
     background-position:center;
     -webkit-background-size: cover;
     -moz-background-size:  cover;
