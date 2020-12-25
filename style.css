@@ -155,7 +155,10 @@ body {
     background-image: url(photo/heroimage.jpg);
     filter:grayscale(50%);
     background-size: cover;
-    background-position:bottom;
+    background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
     align-items: center;
 }
  
@@ -195,8 +198,8 @@ body {
     border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
-    animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
-                animated-cursor 2.5s steps(20,end);
+    animation: animated-text 2s steps(15,end) 0.5s 1 normal both,
+                animated-cursor 2.5s steps(15,end);
 }
 
 .intro-explain {
@@ -213,8 +216,8 @@ body {
     border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
-    animation: animated-text2 2s steps(29,end) 0.5s 1 normal both,
-                animated-cursor 2.5s steps(20,end) infinite;
+    animation: animated-text2 2s steps(30,end) 0.5s 1 normal both,
+                animated-cursor 2.5s steps(30,end) infinite;
     animation-delay: 2.5s;
 }
 
