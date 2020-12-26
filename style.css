@@ -198,8 +198,8 @@ body {
     border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
-/*    animation: animated-text 2s steps(15,end) 0.5s 1 normal both,
-                animated-cursor 2.5s steps(15,end); */
+    animation: animated-text 2s steps(15,end) 0.5s 1 normal both,
+                animated-cursor 2.5s steps(15,end);
 }
 
 .intro-explain {
@@ -216,9 +216,9 @@ body {
     border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
-/*    animation: animated-text2 2s steps(30,end) 0.5s 1 normal both,
+    animation: animated-text2 2s steps(30,end) 0.5s 1 normal both,
                 animated-cursor 2.5s steps(30,end) infinite;
-    animation-delay: 2.5s; */
+    animation-delay: 2.5s;
 }
 
 @keyframes animated-text {
@@ -277,8 +277,8 @@ body {
         border-right: solid 2px transparent;
         white-space: nowrap;
         overflow: hidden;
-/*        animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
-                    animated-cursor 2.5s steps(20,end);*/
+        animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
+                    animated-cursor 2.5s steps(20,end);
     }
     
     .intro-explain {
@@ -295,9 +295,9 @@ body {
         border-right: solid 2px transparent;
         white-space: nowrap;
         overflow: hidden;
-/*        animation: animated-text2 2s steps(29,end) 0.5s 1 normal both,
+        animation: animated-text2 2s steps(29,end) 0.5s 1 normal both,
                     animated-cursor 2.5s steps(20,end) infinite;
-        animation-delay: 2.5s;*/
+        animation-delay: 2.5s;
     }
     
     @keyframes animated-text {
@@ -482,12 +482,28 @@ hr {
     height: 0.5px;
 }
 
-.portfolio-top {
+.portfolio-image {
+    background-image: url(photo/portfolioimage.jpg);
     width: 100%;
     height: 50vh;
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    filter:brightness(60%);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-title {
+    position: absolute;
+    top: 25vh;
+    left: 38vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: snow;
 }
 
 .portfolio-main {
@@ -516,7 +532,7 @@ hr {
 
 .portfolio_description {
     position: relative;
-    padding-top: 10vw;
+    padding-top: 3vw;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: white;
@@ -525,8 +541,8 @@ hr {
 
 .Shopee {
     background-image: url(portfolio/Shopee.png);
-    width: 20vw;
-    height: 20vw;
+    width: 10vw;
+    height: 10vw;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
@@ -542,8 +558,8 @@ hr {
 
 .Circles_Life {
     background-image: url(portfolio/Circles_Life.png);
-    width: 20vw;
-    height: 20vw;
+    width: 10vw;
+    height: 10vw;
     margin-left: auto;
     margin-right: auto;
     -webkit-background-size: cover;
@@ -553,7 +569,16 @@ hr {
 }
 
 @media (max-width: 500px) {
-    .portfolio-main {
+    .portfolio-title {
+        position: absolute;
+        top: 25vh;
+        left: 25vw;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: snow;
+    }
+        .portfolio-main {
         display: grid;
         width: 100%;
         margin-top: 100px;
@@ -568,8 +593,8 @@ hr {
   
     .Shopee {
         background-image: url(portfolio/Shopee.png);
-        width: 60vw;
-        height: 60vw;
+        width: 30vw;
+        height: 30vw;
         margin-left: auto;
         margin-right: auto;
         background-position: center;
@@ -581,8 +606,8 @@ hr {
     
     .Circles_Life {
         background-image: url(portfolio/Circles_Life.png);
-        width: 60vw;
-        height: 60vw;
+        width: 30vw;
+        height: 30vw;
         margin-left: auto;
         margin-right: auto;
         background-position: center;
@@ -594,7 +619,7 @@ hr {
 
     .portfolio_description {
         position: relative;
-        padding-top: 20vw;
+        padding-top: 15vw;
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
         color: white;
