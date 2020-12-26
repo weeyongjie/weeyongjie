@@ -45,8 +45,9 @@
         <div class='about-me-image'></div>
         <p id="about-me-description">
                 I am a Year 4 Economics Major at NUS, with an interest in technology, innovation and entrepreneurship. I am passionate in understanding how economic
-                concepts in describing market behaviour can be applied to the business world, particularly how new business models can be created to disrupt the status quo. The 
-                exploration of this path led me to discover the field of Product Management. I believe good products are hard to create, as often people know they are unsatisfied
+                concepts in describing market behaviour can be applied to the business world, particularly how new business models can be created to disrupt the status quo. 
+                <br><br>
+                The exploration of this path led me to discover the field of Product Management. I believe good products are hard to create, as often people know they are unsatisfied
                  with what they are using but struggle to describe what could be done better.
                 <br><br>
                 When I am not thinking about work, I love to sing and even joined several competitions. I also like to read biographies of entrepreneurs as I find they have a
@@ -57,11 +58,9 @@
         </p>
     </div>
 
-<hr>
-
     <div class='work'>
         <div class='worktable'>  
-            <div class='workcell'><b>Work Experience</b></div>
+            <div class='workcell-title'><b>Work Experience</b></div>
                 <div class='workcell'> 
                     <i>Mar 20 - Jul 20</i><br>
                         Product Management Intern<br>
@@ -79,7 +78,7 @@
                         APAC CEO Office Intern<br>
                         Aon plc
                 </div>
-                <div class='workcell'><b>Education</b></div>
+                <div class='workcell-title'><b>Education</b></div>
                 <div class='workcell'>
                 <i> 2017 - Present</i><br>
                     National University of Singapore<br>
@@ -90,7 +89,7 @@
                     NUS Overseas College Beijing<br>
                     Tsinghua University
                 </div>
-                <div class='workcell'><b>Competency</b></div>
+                <div class='workcell-title'><b>Competency</b></div>
                 <div class='workcell'>
                     Product Management<br>
                     Product Marketing<br>
@@ -100,7 +99,7 @@
                     Market Research<br>
                     UX Design
                 </div>
-                <div class='workcell'><b>Technical Skills</b></div>
+                <div class='workcell-title'><b>Technical Skills</b></div>
                 <div class='workcell'>
                     SQL<br>
                     Python<br>
@@ -115,8 +114,6 @@
                 </div>
     </div>
 
-<hr>
-
     <p id='medium'><b>Medium Articles</b></p>
 
     <div id="medium-widget"></div>
@@ -126,7 +123,36 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-<hr>
+<script>
+    $(function(){  // $(document).ready shorthand
+        $('.about-me, .worktable, #medium, #medium-widget').fadeIn('slow');
+      });
+
+      
+    $(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.about-me, .worktable, #medium, #medium-widget').each( function(i){
+
+            var bottom_of_object = $(this).position().top + ($(this).outerHeight())/4;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'}, 600);
+
+            }
+
+        }); 
+
+    });
+
+    });
+    </script>
 
 </body>
 

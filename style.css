@@ -198,8 +198,8 @@ body {
     border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
-    animation: animated-text 2s steps(15,end) 0.5s 1 normal both,
-                animated-cursor 2.5s steps(15,end);
+    animation: animated-text 1s steps(20,end) 0.5s 1 normal both,
+                animated-cursor 1.5s steps(20,end);
 }
 
 .intro-explain {
@@ -216,9 +216,9 @@ body {
     border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
-    animation: animated-text2 2s steps(30,end) 0.5s 1 normal both,
-                animated-cursor 2.5s steps(30,end) infinite;
-    animation-delay: 2.5s;
+    animation: animated-text2 1s steps(20,end) 0.5s 1 normal both,
+                animated-cursor 1.5s steps(20,end) infinite;
+    animation-delay: 1.5s;
 }
 
 @keyframes animated-text {
@@ -277,8 +277,8 @@ body {
         border-right: solid 2px transparent;
         white-space: nowrap;
         overflow: hidden;
-        animation: animated-text 2s steps(29,end) 0.5s 1 normal both,
-                    animated-cursor 2.5s steps(20,end);
+        animation: animated-text 1s steps(20,end) 0.5s 1 normal both,
+                    animated-cursor 1.5s steps(20,end);
     }
     
     .intro-explain {
@@ -295,9 +295,9 @@ body {
         border-right: solid 2px transparent;
         white-space: nowrap;
         overflow: hidden;
-        animation: animated-text2 2s steps(29,end) 0.5s 1 normal both,
-                    animated-cursor 2.5s steps(20,end) infinite;
-        animation-delay: 2.5s;
+        animation: animated-text2 1s steps(20,end) 0.5s 1 normal both,
+                    animated-cursor 1.5s steps(20,end) infinite;
+        animation-delay: 1.5s;
     }
     
     @keyframes animated-text {
@@ -323,17 +323,20 @@ body {
 
 .about-me {
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
+    justify-items: center;
+    opacity: 0;
 }
 
 .about-me-image {
     background-image: url(photo/Casual_Photo.jpg);
     background-position: center;
-    min-height: 100vh;
+    border-radius: 50%;
+    width: 50vh;
+    min-height: 50vh;
     filter: grayscale(80%);
     -webkit-background-size: cover;
     -moz-background-size:  cover;
@@ -353,16 +356,16 @@ body {
     font-size: 16px;
     letter-spacing: 0.05em;
     line-height: 31px;
-    color: black;
+    color: #2a2a2a;
 }
 
 .resume-button {
     border: none;
     padding: 8px 15px;
-    background-color: #989898;
+    background-color: #D4D4D4;
     color: white;
-    opacity: 0.7;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .work {
@@ -375,14 +378,29 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: auto auto auto auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    background-color: #1470af;
+    opacity: 0;
 }
 
 @media (max-width: 1600px) {
+    .about-me {
+        width: 100%;
+        min-height: 50vh;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
     .worktable {
         display: grid;
         width: 100%;
@@ -396,6 +414,28 @@ body {
 }
 
 @media (max-width: 450px) {
+    .about-me {
+        width: 100%;
+        min-height: 50vh;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .about-me-image {
+        background-image: url(photo/Casual_Photo.jpg);
+        background-position: center;
+        border-radius: 50%;
+        width: 50vw;
+        min-height: 50vw;
+        filter: grayscale(80%);
+        -webkit-background-size: cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
     .worktable {
         display: grid;
         width: 100%;
@@ -408,11 +448,22 @@ body {
     }
 }
 
+.workcell-title {
+    vertical-align: top;
+    align-self: center;
+    padding-bottom: 5vh;
+    line-height: 30px;
+    font-size: 20px;
+    color: snow;
+}
+
 .workcell {
     vertical-align: top;
     align-self: center;
     padding-bottom: 5vh;
     line-height: 30px;
+    font-size: 18px;
+    color: #ECECEC;
 }
 
 .text {
@@ -434,12 +485,15 @@ p {
     font-size: 24px;
     padding-bottom: 20px;
     text-align: center;
+    opacity: 0;
 }
 
-.medium-widget {
+#medium-widget {
     width: 40%;
     padding-left: 30%;
     padding-right: 30%;
+    padding-bottom: 10vh;
+    opacity: 0;
 }
 
 .row {
