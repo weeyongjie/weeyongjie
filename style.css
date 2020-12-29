@@ -777,7 +777,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: 100%;
-    grid-row-gap: 10vh;
+    grid-row-gap: 20vh;
     justify-items: center;
 }
 
