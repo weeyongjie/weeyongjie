@@ -498,7 +498,7 @@ p {
 
 .row {
     background-color: #FAFAFA;
-    width: 100%;
+    width: 102%;
     height: auto;
     margin: 0;
     padding: 0;
@@ -510,7 +510,8 @@ p {
 }
 
 .column {
-    padding: 10%;
+    margin: 0;
+    padding: 7%;
     text-align: justify;
 }
 
@@ -902,19 +903,17 @@ hr {
     height: 50vh;
     margin-bottom: 10vh;
     padding: 0px;
+    margin-left: 0;
+    margin-right: 0;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: right;
+    background-position: 0% 35%;
 }
 
 .life-title {
     position: absolute;
-    position: absolute;
     top: 25vh;
-    left: 30vw;
+    left: 50vw;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     font-weight: 700;
@@ -930,8 +929,8 @@ hr {
 
 .top-content {
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 20vh;
     padding: 0;
 }
@@ -959,7 +958,6 @@ hr {
     padding-bottom: 30px;
     z-index: 5;
 }
-
  
 .top-content .carousel-caption h3 {
     color: #fff;
@@ -996,10 +994,10 @@ hr {
     .life-title {
         position: absolute;
         position: absolute;
-        top: 15vh;
-        left: 25vw;
+        top: 20vh;
+        left: 45vw;
         font-family: 'Montserrat', sans-serif;
-        font-size: 36px;
+        font-size: 40px;
         font-weight: 700;
         color: snow;
     }
@@ -1084,10 +1082,10 @@ hr {
         position: absolute;
         position: absolute;
         top: 20vh;
-        left: 15vw;
+        left: 40vw;
         font-family: 'Montserrat', sans-serif;
-        font-size: 26px;
-        font-weight: 500;
+        font-size: 22px;
+        font-weight: 600;
         color: snow;
     }
     
@@ -1110,7 +1108,7 @@ hr {
         display: block;
         position: absolute;
         width: 100%;
-        height: 80px;
+        height: 100px;
         bottom: 0px;
         background-color: black;
         opacity: 0.6;
@@ -1126,7 +1124,7 @@ hr {
 
     .top-content .carousel-caption {
         position: absolute;
-        top: 160px;
+        top: 55%;
     }
      
     .top-content .carousel-caption h3 {
