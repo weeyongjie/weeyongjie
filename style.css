@@ -437,6 +437,19 @@ body {
         justify-items: center;
     }
 
+    .about-me-image {
+        background-image: url(photo/Casual_Photo.jpg);
+        background-position: center;
+        border-radius: 50%;
+        width: 50vh;
+        height: 50vh;
+        filter: grayscale(40%);
+        -webkit-background-size: cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
     #about-me-description {
         vertical-align: middle;
         position: relative;
@@ -481,6 +494,14 @@ body {
         color: #ECECEC;
     }
 
+#medium {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    opacity: 0;
+}
+
     #medium-widget {
         width: 80%!important;
         padding-left: 10%!important;
@@ -504,8 +525,8 @@ body {
         background-image: url(photo/Casual_Photo.jpg);
         background-position: center;
         border-radius: 50%;
-        width: 50vw;
-        min-height: 50vw;
+        width: 80vw;
+        height: 80vw;
         filter: grayscale(40%);
         -webkit-background-size: cover;
         -moz-background-size:  cover;
@@ -558,6 +579,13 @@ body {
         color: #ECECEC;
     }
 
+    #medium {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        opacity: 0;
+    }
 
     #medium-widget {
         width: 80%!important;
