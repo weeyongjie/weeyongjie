@@ -338,7 +338,7 @@ body {
     background-position: center;
     border-radius: 50%;
     width: 50vh;
-    min-height: 50vh;
+    height: 50vh;
     filter: grayscale(40%);
     -webkit-background-size: cover;
     -moz-background-size:  cover;
