@@ -448,7 +448,7 @@ body {
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
         letter-spacing: 0.05em;
-        line-height: 40px;
+        line-height: 48px;
         color: #2a2a2a;
     }
 
@@ -468,7 +468,7 @@ body {
         align-self: center;
         padding-bottom: 5vh;
         line-height: 30px;
-        font-size: 28px;
+        font-size: 30px;
         color: snow;
     }
     
@@ -476,7 +476,7 @@ body {
         vertical-align: top;
         align-self: center;
         padding-bottom: 5vh;
-        line-height: 30px;
+        line-height: 40px;
         font-size: 24px;
         color: #ECECEC;
     }
@@ -513,6 +513,22 @@ body {
         background-size: cover;
     }
 
+    #about-me-description {
+        vertical-align: middle;
+        position: relative;
+        align-self: center;
+        padding-top: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: 40px;
+        color: #2a2a2a;
+    }
+
+
     .worktable {
         display: grid;
         width: 100%;
@@ -523,6 +539,25 @@ body {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
+
+    .workcell-title {
+        vertical-align: top;
+        align-self: center;
+        padding-bottom: 5vh;
+        line-height: 30px;
+        font-size: 18px;
+        color: snow;
+    }
+    
+    .workcell {
+        vertical-align: top;
+        align-self: center;
+        padding-bottom: 5vh;
+        line-height: 30px;
+        font-size: 14px;
+        color: #ECECEC;
+    }
+
 
     #medium-widget {
         width: 80%!important;
