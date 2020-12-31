@@ -33,7 +33,7 @@ body {
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color:#45b4d4;
 }
 
 
@@ -135,6 +135,7 @@ body {
 {
   padding: 20px 0;
   font-size: 22px;
+  font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   color: #ECECEC;
 }
@@ -207,7 +208,7 @@ body {
     vertical-align: middle;
     position: absolute;
     margin: 0;
-    top: 60%;
+    top: 55%;
     left: 32%;
     color: snow;
     font-family: 'Montserrat', sans-serif;
@@ -286,7 +287,7 @@ body {
         vertical-align: middle;
         position: absolute;
         margin: 0;
-        top: 50%;
+        top: 55%;
         left: 15%;
         color: snow;
         font-family: 'Montserrat', sans-serif;
@@ -319,6 +320,7 @@ body {
     padding-bottom: 10vh;
     margin-left: auto;
     margin-right: auto;
+    filter: drop-shadow(0 0 5px grey);
 }
 
 .about-me {
