@@ -186,6 +186,7 @@ body {
  }
 
 .intro {
+    display: inline-block;
     text-align: center;
     vertical-align: middle;
     position: absolute;
@@ -199,11 +200,12 @@ body {
     border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
-    animation: animated-text 1s steps(30,end) 0.5s both,
+    animation: animated-text 1s steps(30,end) 0.5s normal both,
                 animated-cursor 1.5s steps(30,end);
 }
 
 .intro-explain {
+    display: inline-block;
     text-align: center;
     vertical-align: middle;
     position: absolute;
@@ -217,7 +219,7 @@ body {
     border-right: solid 2px transparent;
     white-space: nowrap;
     overflow: hidden;
-    animation: animated-text2 1s steps(30,end) 0.5s 1 both,
+    animation: animated-text2 1s steps(30,end) 0.5s 1 normal both,
                 animated-cursor 1.5s steps(30,end) infinite;
     animation-delay: 1.5s;
 }
@@ -265,6 +267,7 @@ body {
 
 @media (max-width: 1024px) {
     .intro {
+        display: inline-block;
         text-align: center;
         vertical-align: middle;
         position: absolute;
@@ -278,11 +281,12 @@ body {
         border-right: solid 2px transparent;
         white-space: nowrap;
         overflow: hidden;
-        animation: animated-text 1s steps(30,end) 0.5s both,
+        animation: animated-text 1s steps(30,end) 0.5s normal both,
                     animated-cursor 1.5s steps(30,end);
     }
     
     .intro-explain {
+        display: inline-block;
         text-align: center;
         vertical-align: middle;
         position: absolute;
@@ -296,7 +300,7 @@ body {
         border-right: solid 2px transparent;
         white-space: nowrap;
         overflow: hidden;
-        animation: animated-text2 1s steps(30,end) 0.5s both,
+        animation: animated-text2 1s steps(30,end) 0.5s normal both,
                     animated-cursor 1.5s steps(30,end) infinite;
         animation-delay: 1.5s;
     }
