@@ -1157,7 +1157,7 @@ hr {
 .carousel-title {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
     text-align: left;
     font-style: italic;
@@ -1239,9 +1239,9 @@ hr {
     }
     
     .carousel-title {
-        color: grey;
+        color:#333333;
         font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
+        font-size: 22px;
         text-align: left;
         font-style: italic;
     }
@@ -1327,7 +1327,7 @@ hr {
     }
     
     .carousel-title {
-        color: grey;
+        color:#333333;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         text-align: left;
