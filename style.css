@@ -273,7 +273,7 @@ body {
         position: absolute;
         margin: 0;
         top: 40%;
-        left: 15%;
+        left: 17%;
         color: snow;
         font-family: 'Montserrat', sans-serif;
         font-size: 7vw;
@@ -307,7 +307,7 @@ body {
     
     @keyframes animated-text {
         from{width: 0;}
-        to{width: 70%}
+        to{width: 68%}
     }
 
     @keyframes animated-text2 {
