@@ -328,7 +328,7 @@ body {
     min-height: 50vh;
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 40% 60%;
     justify-items: center;
     opacity: 0;
 }
@@ -545,7 +545,7 @@ body {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         letter-spacing: 0.05em;
-        line-height: 40px;
+        line-height: 35px;
         color: #2a2a2a;
     }
 
