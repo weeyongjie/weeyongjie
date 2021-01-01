@@ -149,9 +149,11 @@ body {
 }
 
 .hero-image-home {
+    display: block;
+    position: relative;
     margin: 0;
     padding: 0;
-    max-width: 100%;
+    width: 100%;
     height: 60vh;
     background-image: url(photo/heroimage2.jpg);
     filter: grayscale(50%) drop-shadow(0 0 50px #152238);
@@ -166,14 +168,10 @@ body {
  .hero-image-home:after {
     content: '';
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 60vh;
-    z-index: 2;
-    top: 0px;
-    left: 0px;
-    right: 0;
-    bottom: 100px;
+    bottom: 120px;
     pointer-events: none;
     background-image: url(photo/snow2.png), url(photo/snow3.png);
     animation: snow 20s linear infinite;
@@ -186,13 +184,11 @@ body {
  }
 
 .intro {
-    display: inline-block;
     text-align: center;
-    vertical-align: middle;
-    position: absolute;
+    position: relative;
     margin: 0;
     top: 40%;
-    left: 35%;
+    left: 36%;
     color: snow;
     font-family: 'Montserrat', sans-serif;
     font-size: 3vw;
@@ -205,12 +201,10 @@ body {
 }
 
 .intro-explain {
-    display: inline-block;
     text-align: center;
-    vertical-align: middle;
-    position: absolute;
+    position: relative;
     margin: 0;
-    top: 65%;
+    top: 50%;
     left: 32%;
     color: snow;
     font-family: 'Montserrat', sans-serif;
@@ -267,10 +261,8 @@ body {
 
 @media (max-width: 1024px) {
     .intro {
-        display: inline-block;
         text-align: center;
-        vertical-align: middle;
-        position: absolute;
+        position: relative;
         margin: 0;
         top: 40%;
         left: 17%;
@@ -286,12 +278,10 @@ body {
     }
     
     .intro-explain {
-        display: inline-block;
         text-align: center;
-        vertical-align: middle;
-        position: absolute;
+        position: relative;
         margin: 0;
-        top: 55%;
+        top: 50%;
         left: 15%;
         color: snow;
         font-family: 'Montserrat', sans-serif;
@@ -317,6 +307,7 @@ body {
 }
 
 .down-arrow {
+    position: relative;
     display: block;
     width: 10vw;
     height: 10vh;
@@ -328,6 +319,7 @@ body {
 }
 
 .about-me {
+    position: relative;
     width: 100%;
     min-height: 50vh;
     display: grid;
@@ -338,6 +330,7 @@ body {
 }
 
 .about-me-image {
+    position: relative;
     background-image: url(photo/Casual_Photo.jpg);
     background-position: center;
     border-radius: 50%;
@@ -366,21 +359,27 @@ body {
 }
 
 .resume-button {
+    position: relative;
     border: none;
     padding: 8px 15px;
     background-color: #D4D4D4;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     border-radius: 30px;
     cursor: pointer;
 }
 
 .work {
+    position: relative;
     align-items: center;
     width: 100%;
     margin: 0 auto;
 }
 
 .worktable {
+    position: relative;
     display: grid;
     width: 100%;
     grid-template-columns: auto auto auto auto;
@@ -398,6 +397,7 @@ body {
 }
 
 .workcell-title {
+    position: relative;
     vertical-align: top;
     align-self: center;
     padding-bottom: 5vh;
@@ -407,6 +407,7 @@ body {
 }
 
 .workcell {
+    position: relative;
     vertical-align: top;
     align-self: center;
     padding-bottom: 5vh;
@@ -416,6 +417,7 @@ body {
 }
 
 #medium {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     padding-bottom: 20px;
@@ -424,6 +426,7 @@ body {
 }
 
 #medium-widget {
+    position: relative;
     width: 40%;
     padding-left: 30%;
     padding-right: 30%;
@@ -433,6 +436,7 @@ body {
 
 @media (max-width: 1600px) {
     .about-me {
+        position: relative;
         width: 100%;
         min-height: 50vh;
         display: grid;
@@ -442,6 +446,7 @@ body {
     }
 
     .about-me-image {
+        position: relative;
         background-image: url(photo/Casual_Photo.jpg);
         background-position: center;
         border-radius: 50%;
@@ -469,7 +474,21 @@ body {
         color: #2a2a2a;
     }
 
+    .resume-button {
+        position: relative;
+        border: none;
+        padding: 10px 18px;
+        background-color: #D4D4D4;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
     .worktable {
+        position: relative;
         display: grid;
         width: 100%;
         grid-template-columns: auto auto;
@@ -481,6 +500,7 @@ body {
     }
 
     .workcell-title {
+        position: relative;
         vertical-align: top;
         align-self: center;
         padding-bottom: 5vh;
@@ -490,6 +510,7 @@ body {
     }
     
     .workcell {
+        position: relative;
         vertical-align: top;
         align-self: center;
         padding-bottom: 5vh;
@@ -499,6 +520,7 @@ body {
     }
 
 #medium {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     padding-bottom: 20px;
@@ -507,6 +529,7 @@ body {
 }
 
     #medium-widget {
+        position: relative;
         width: 80%!important;
         padding-left: 10%!important;
         padding-right: 10%!important;
@@ -517,6 +540,7 @@ body {
 
 @media (max-width: 450px) {
     .about-me {
+        position: relative;
         width: 100%;
         min-height: 50vh;
         display: grid;
@@ -526,6 +550,7 @@ body {
     }
 
     .about-me-image {
+        position: relative;
         background-image: url(photo/Casual_Photo.jpg);
         background-position: center;
         border-radius: 50%;
@@ -553,8 +578,21 @@ body {
         color: #2a2a2a;
     }
 
+    .resume-button {
+        position: relative;
+        border: none;
+        padding: 6px 12px;
+        background-color: #D4D4D4;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 30px;
+        cursor: pointer;
+    }
 
     .worktable {
+        position: relative;
         display: grid;
         width: 100%;
         grid-template-columns: auto;
@@ -566,6 +604,7 @@ body {
     }
 
     .workcell-title {
+        position: relative;
         vertical-align: top;
         align-self: center;
         padding-bottom: 5vh;
@@ -575,6 +614,7 @@ body {
     }
     
     .workcell {
+        position: relative;
         vertical-align: top;
         align-self: center;
         padding-bottom: 5vh;
@@ -584,6 +624,7 @@ body {
     }
 
     #medium {
+        position: relative;
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
         padding-bottom: 20px;
@@ -592,6 +633,7 @@ body {
     }
 
     #medium-widget {
+        position: relative;
         width: 80%!important;
         padding-left: 10%!important;
         padding-right: 10%!important;
@@ -601,6 +643,7 @@ body {
 }
 
 .row {
+    position: relative;
     background-color: #FAFAFA;
     width: 102%;
     height: auto;
@@ -614,12 +657,14 @@ body {
 }
 
 .column {
+    position: relative;
     margin: 0;
     padding: 7%;
     text-align: justify;
 }
 
 .copyright {
+    position: relative;
     background-color: #FAFAFA;
     width: 100%;
     height: 2vh;
