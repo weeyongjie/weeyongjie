@@ -433,7 +433,7 @@ body {
     opacity: 0;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1024px) {
     .about-me {
         position: relative;
         width: 100%;
