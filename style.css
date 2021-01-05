@@ -325,6 +325,7 @@ body {
     display: grid;
     margin: 0 auto;
     grid-template-columns: 40% 60%;
+    align-items: center;
     justify-items: center;
     opacity: 0;
 }
