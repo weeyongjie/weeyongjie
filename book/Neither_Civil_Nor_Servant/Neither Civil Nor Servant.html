@@ -1,0 +1,639 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Neither Civil Nor Servant - The Philip Yeo Story (Peh Shing Huei)</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a1f0d0cc-fecb-4fa9-ab98-dafdf8e83507" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📕</span></div><h1 class="page-title">Neither Civil Nor Servant - The Philip Yeo Story (Peh Shing Huei)</h1></header><div class="page-body"><p id="43757cec-ab3b-46dd-84cf-a538a4c52dac" class="">
+</p><figure id="f0bc1360-30fb-454d-ba7f-5615d1e52fad" class="image"><a href="Neither Civil NorServant.png"><img style="width:240px" src="Neither Civil Nor Servant.png"/></a></figure><h1 id="084b22bc-bd5b-4ded-9f4d-62a4d91359e4" class="">🚀 <strong>The Book in 3 Sentences</strong></h1><ol id="47d969b6-f48c-49e5-8b90-c75dc266f4fc" class="numbered-list" start="1"><li> Don&#x27;t be limited by your present circumstances; know what needs to be done, believe that it can be done, and you will figure out a way to do it.</li></ol><ol id="7868bb6a-bd0b-4de5-a717-7f1f42c5eec5" class="numbered-list" start="2"><li> When you leading smart people, give them the free reign to do what they do best, and instead focus on the higher strategic priorities which give your people the guiding light to follow.</li></ol><ol id="9de06439-ce3c-4069-aa05-fc28002d93dd" class="numbered-list" start="3"><li>Always think ahead and plan ahead especially if you are a small player; if you merely follow in others footsteps, you will only be picking up crumbs.</li></ol><h1 id="077387ea-6bac-48a3-a7cf-59b7bbfbb1a6" class="">🎨 <strong>Impressions</strong></h1><p id="bae84bd6-7e27-4216-9394-c5537742bffb" class="">This book is very direct and honest, which is refreshing to read given that it is describing the life of a civil servant - people who we usually see as stoic and conservative. The title of the book &quot;Neither Civil Nor Servant&quot; nicely sums up Philip Yeo&#x27;s personality as he showed that he is willing to step on the toes of authorities and thread on grey areas if that means he could get his job done. As a man who devotes his entire life to Singapore, I definitely gained more respect for him and have a more profound understanding of his work.</p><p id="0d174c65-aac0-4788-ac85-da1c953d14a3" class="">
+</p><h1 id="26e0c232-bfc8-4627-8e56-c136b2fb2795" class="">👤 <strong>Who Should Read It?</strong></h1><p id="99787dc3-086c-4f56-8ef1-b6c0a0c69a6a" class="">In my opinion, all Singaporeans should read this book as it provides valuable insights into the inner workings of how Singapore overcame all odds and delivered the economic miracle every developing country wants to replicate. Even though the examples in the book are given in the public sector setting, many of the lessons can easily be applied to the private sector, given how Philip Yeo was often seen as the misfit who aligns more with the leadership style of private corporations. </p><h1 id="554eb812-88c1-49b6-b4ce-dc32f16d9885" class="">☘️ <strong>How the Book Changed Me</strong></h1><p id="f1da4b5e-a3f6-404b-b62b-f26e181a248f" class="">It didn&#x27;t really change me fundamentally because Philip Yeo&#x27;s work was already well-known way before the book was published. What I got out of the book was his out-of-the-box thought process and clear vision on what he wanted to accomplish. While I do not agree with all the decisions he made in his career, I do understand why he prefers to be a tinkerer rather than a thinker. Too much are being debated in parliament nowadays without any swift action plans to follow-up, essentially a case of 纸上谈兵 (fighting a war on paper). It also reinforce the idea prevalent in the startup community that the process of implementation is much more important than the great idea one has. Even when one has to fail, make sure to fail fast so that we can quickly move on to finding the right solution.</p><p id="bad07829-1495-44a2-aa54-9971979b2d28" class="">
+</p><h1 id="20385a60-4b2f-4c31-9da6-37f594427ca9" class="">✍️ <strong>My Top 3 Quotes</strong></h1><ol id="3a0e5d62-3f24-410e-be85-ae4c1cb12920" class="numbered-list" start="1"><li>&quot;Wars are won by logistics&quot; (humans should compete using their brains not their brawn)</li></ol><ol id="b76fdc40-fe25-48f2-9d5e-fdea2d28a98c" class="numbered-list" start="2"><li>&quot;No industries last forever&quot; (the 5-5-5 rule governing rise and fall of industries)</li></ol><ol id="b60624ff-06d1-424b-abe5-884311bef0f7" class="numbered-list" start="3"><li>&quot;If I have to tell you how to do it, I might as well do it myself&quot; (criticism of micromanagement)</li></ol><p id="1b006f33-eee9-42db-a563-bd620dedce71" class="">
+</p><h1 id="72978696-2b91-44d4-b390-8d4061984d3b" class="">📒 <strong>Summary + Notes</strong></h1><p id="4ab00a4e-38c0-469d-9add-978d74038e9e" class=""><strong>Chapter 1 - The Lone Ranger</strong></p><ul id="09931a6f-8a5d-4e98-96ac-24b88d4f8b95" class="bulleted-list"><li>Philip Yeo needed money to buy chemicals and equipment to practice for his GCE &quot;A&quot; Levels Chemistry exams as his chemistry teacher was not around for weeks and SJI disallowed students from using the labs without a teacher</li></ul><ul id="38567195-aae7-4de8-9454-13f790d462d2" class="bulleted-list"><li>Hence, he raised money by using the audio and visual equipment from his CCA to screen movies on campus every Saturday and charge an entrance fee —&gt; reflective of his entrepreneurial spirit since youth</li></ul><ul id="1bcf1d13-0b71-4bd7-bab9-a69c0463287f" class="bulleted-list"><li>&quot;To me, a thinker sits under a tree. A tinkerer is more important, like Leonardo Da Vinci. It&#x27;s not that he didn&#x27;t think. But he got things done too. I want to see results, I want to see a project, I want to see something tangible.&quot;</li></ul><ul id="82fc3b86-600d-4f65-a960-a6a8a99d4a5d" class="bulleted-list"><li>On his family life, his son said he is sort of omnipresent. &quot;When you need him, he will appear. I think that&#x27;s better than a father who was always around but would disappear when you need him.&quot;</li></ul><ul id="bd80735e-8a54-4710-b1d6-c65c7d86613e" class="bulleted-list"><li>&quot;Those obedient kids are the ones who would make good Administrative Officers. They won&#x27;t be entrepreneurs&quot;</li></ul><p id="e51d918a-74dc-4c63-b951-78d452cc17d6" class="">
+</p><p id="c25964d7-6493-4063-9ab9-7df552ba1fdf" class=""><strong>Chapter 2 - The Engineer of Combat</strong></p><ul id="a8642d05-dce3-4cbd-9acc-3588eaeb771a" class="bulleted-list"><li>His first priority at Mindef was to develop logistics systems to help equip, clothe and feed a new fighting force, but he didn&#x27;t have enough staff. Hence, he decided to &quot;kidnap&quot; talents from other the pool of non-combatants. His criteria was:<ul id="be6267b3-713d-4140-af77-01ac9fb88617" class="bulleted-list"><li>Education Qualifications (preferably engineering)</li></ul><ul id="fff8b6aa-41bd-49d2-8d52-3644c7b647f0" class="bulleted-list"><li>Have some form of physical deficiencies so they can&#x27;t be combatants</li></ul></li></ul><ul id="749f1a07-b017-465d-9a1c-bf7090664d0a" class="bulleted-list"><li>After witnessing mass unemployment of 70,000 civilian workforce as a result of the departing British, he said &quot;I learnt with humility that unemployment brings down even the hardest of men, that there is no better way to secure the future than to go out to create it.&quot;</li></ul><ul id="ae864965-dc5d-42fa-a7dc-ca6319a49e31" class="bulleted-list"><li>&quot;When it came to meetings, Philip Yeo already made up his mind whether to go ahead or not. We would have a quick presentation and skip a lot of points because he would say &#x27;I&#x27;ve read it before. Here&#x27;s the budget and the deadline. Go do it.&#x27;&quot;. —&gt; While it is very efficient, I wonder why bother having the meeting in the first place to do the presentation hmmm.. and its not like other stakeholders have the chance to chime in their opinions so it seems kind of like an authoritarian leadership style which is frowned upon today</li></ul><ul id="3391f0a0-cfe8-4963-9d05-1a3108be27b5" class="bulleted-list"><li>This chapter also gave a glimpse of the seemingly trivial things that Goh Keng Swee seems obsessed with:<ul id="eb51261c-be40-4665-8fde-667a76a31d29" class="bulleted-list"><li>Equip every battalion with a squash court because they wanted officers to be fit</li></ul><ul id="3f135e45-c79c-4267-a917-400d7451f0cf" class="bulleted-list"><li>Wanted officers to play polo because he believed in cavalry and British army officers all played polo and subsequently for everyone to play bridge because it was an intellectual game and he love playing bridge</li></ul><ul id="7b64846c-4ccc-4ce4-8fa6-de84a7661aec" class="bulleted-list"><li>Trying to move all the pigs who are polluting into a tanker and sail into the South China Sea</li></ul></li></ul><p id="b5fa41b9-96a3-4d6a-bde9-8f503240885c" class="">
+</p><p id="f719034e-158c-4f68-bbed-0a7b68f39817" class=""><strong>Chapter 3 - Bullet the Blue Sky</strong></p><ul id="7ad66d8b-d52c-4cf1-a294-f49b65a1b1dd" class="bulleted-list"><li>Communist Vietnam was spreading its influence throughout Southeast Asia, raising fear that a domino effect will ensue, hence threatening Singapore&#x27;s sovereignty</li></ul><ul id="676664f6-946b-4cf4-916c-10beb2ffa079" class="bulleted-list"><li>Philip Yeo was sent by Goh Keng Swee to upgrade the Thai military which was severely lacking in war preparedness apart from its huge manpower</li></ul><ul id="929a8a47-6539-4410-946d-d1b802755e3b" class="bulleted-list"><li>&quot;In General Kriangsak&#x27;s time the army had 700 generals or, as one observer noted, one for every tank&quot;</li></ul><ul id="1ff39498-c14b-47b9-adf4-6c60516f5bbc" class="bulleted-list"><li>&quot;Wars are won by logistics&quot; said Yeo, after support in the form of ammunition and logistics upgrade helped the Thais fend off the Vietnamese, ending the communist dominos at the Thai-Cambodian border</li></ul><ul id="96370833-5057-4b0e-831e-9b280bd4ba8f" class="bulleted-list"><li>To prevent coup as seen in Indonesia and Thailand, Goh wanted civilian to be in-charge —&gt; hence he created companies (eventually consolidated to become Singapore Technologies group)</li></ul><p id="c176582f-f80d-4d11-9d56-d9e6fab901d1" class="">
+</p><p id="55012255-29e7-4c43-823e-d56ada176558" class=""><strong>Chapter 4 - Rise of the Economic Czar</strong></p><ul id="0d24ce71-3894-4267-a9d2-4cfecc62e123" class="bulleted-list"><li>In one of Yeo&#x27;s first acts as EDB chairman, he signed off on an advertisement to be placed in the Wall Street Journal. The headline was: &#x27;Who would be mad enough to invest in Singapore in a recession?&quot; It carried the signatures of nine global heads of multinational corporations including Apple, Seagate and Motorola, saying &quot;We are&quot;. &quot;We are as well&quot; and &quot;So are we&quot;&#x27;.</li></ul><ul id="7538f42a-3b2d-429c-b67d-e8ba338c81df" class="bulleted-list"><li>Philip Yeo was the best travelled chairman EDB ever had and knew most of the CEOs personally. This allows him to attract many different types of companies and create clusters of industries - mainly for electronics, precision engineering, chemical and biomedical sciences.</li></ul><ul id="9ef1e634-3805-4382-a781-22dc112ffef2" class="bulleted-list"><li>&quot;No industries last forever&quot;, he said. He has a 5-5-5 rule. Every industry struggles in the first 5 years, grows and stabilises in the next five and then matures in the last five. By the second five year cycle, it is time to rejuvenate or move on.</li></ul><ul id="be2a371e-9932-4aad-9d3c-a4fd81ec2505" class="bulleted-list"><li>Philip&#x27;s main priority for EDB was to attract the best talent as he believes more in people than organisational structure and hierarchies. Hence, he more than doubled manpower and fought for more PSC scholars and even set up his own scholarship with support from the private sector.</li></ul><ul id="821d432b-3099-4582-a792-7cf50b69c574" class="bulleted-list"><li>The criteria for the &quot;best people&quot; was simple yet difficult to fulfil:<ul id="7cae2954-4e4c-433f-87a8-0566725f48d4" class="bulleted-list"><li>Passionate - sweet eloquence of the nightingale</li></ul><ul id="25b2d80e-c8e6-435b-a023-5c91e582b2a7" class="bulleted-list"><li>Courageous - canine tenacity of a bulldog</li></ul><ul id="880c65a5-bebc-4a05-8cb1-29c73fbcfa7e" class="bulleted-list"><li>Able to take hard knocks - stamina of a stubborn buffalo to keep knocking on doors</li></ul></li></ul><p id="d4841eb8-d85a-4a1a-a3a1-8be56de356e2" class="">
+</p><p id="aee41996-1d44-406e-8c02-61e71e7b759c" class=""><strong>Chapter 5 - Wind Beneath the Second Wind</strong></p><ul id="a7473e90-2a04-49a1-9c40-793856f537d6" class="bulleted-list"><li>As Singapore recovered from the 1985 economic recession, labour shortage became the new problem in 1988 and the strategy was to look overseas - labour intensive work would be taken abroad while high value work could remain in Singapore.</li></ul><ul id="5711b1cf-5a65-41be-878b-18c12f08faf1" class="bulleted-list"><li>The rule of thumb was the overseas assembly point must be nearby so that Singapore can bring back the goods and export it using Singapore as the hub.</li></ul><ul id="5d565551-3df7-43c0-8d93-49fd9fa384ac" class="bulleted-list"><li>&quot;By cloning itself overseas, Singapore intends to forestall any large-scale exodus among those 3000 MNCs now there&quot;. As their overall Asian business grows, foreign corporations will maintain and perhaps expand their regional headquarters in Singapore.</li></ul><ul id="ae48b6b9-5b82-486a-b261-37d2382d6ff6" class="bulleted-list"><li>With his sights set on building an industrial park in Batam, Yeo tapped on his EDB and previous Mindef contacts including Indonesia former Prime Minister B J Habibe and Sumitomo Electric Industries Chairman Tetsuro Kawakami, to support him.</li></ul><ul id="5e97c401-1ee4-41d5-a1a6-b6a21e5c49db" class="bulleted-list"><li>Yeo would later take the same model and adapt it with varying success in Bintan in Indonesia, Bangalore in India, and Binh Duong in Vietnam.</li></ul><ul id="640a766f-f089-42ed-9715-9c650dc61b05" class="bulleted-list"><li>The Batam project was replicated in Wuxi in China. However, Lee Kuan Yew also had sights on Suzhou, a much bigger and famous tie-up between Singapore and China. Philip Yeo was not keen on taking on the project because he spotted a few red-flags:<ul id="98703ece-3808-40e8-97af-bc763743000d" class="bulleted-list"><li>Less than 15% was allocated for industries. Where are the jobs going to come from?</li></ul><ul id="042f8c84-e396-4bfe-ad8c-03b5a3caed76" class="bulleted-list"><li>Instead of setting up shop in the Suzhou New District as the local officials had recommended, Singapore selected another place.</li></ul><ul id="5583c07a-97e1-446d-8c48-c3b8517ff0ea" class="bulleted-list"><li>Singapore took a majority stake in the project. China does not have enough incentives to promote the project</li></ul></li></ul><ul id="e7412763-0ad8-4bcf-8d7f-cf51b3abc9d0" class="bulleted-list"><li>Instead, China set up a similar project in Suzhou New District, used the association with Singapore to promote their own industrial estate, and undercut the Singapore project in land and infrastructure cost.</li></ul><p id="e1d78f3e-ddfd-4f21-b418-48f165b41cd9" class="">
+</p><p id="826485cb-e785-4d62-9161-02ca69ed766d" class=""><strong>Chapter 6 - My Chemical Romance</strong></p><ul id="4bd61b59-689c-4d05-9a72-ffa9ff1b4af2" class="bulleted-list"><li>One of Philip Yeo&#x27;s most crazy idea was to join 7 islands through land reclamation to form Jurong Island, which will house the petrochemical cluster - that can produce 3-4 million tonnes of ethlene a year.</li></ul><ul id="e4d04923-3d83-4e3c-99af-a0acb2a1e03d" class="bulleted-list"><li>One company&#x27;s supplier is the other&#x27;s customer. The strategy was to build a self-sustaining eco-system with both upstream and downstream companies.</li></ul><ul id="f4d4bcdf-a7f0-430e-b14b-35e3bdada947" class="bulleted-list"><li>Philip Yeo said he is a salesman, he was the one who hustled the CEOs. Unfortunately the Admin Officer is not trained that way. Their job is to analyse and question: why do this, why do that? My favourite question is: why not?</li></ul><p id="93e38085-c019-45d3-a1c9-21dfd5be597b" class="">
+</p><p id="c16a2e6d-d3b9-419a-aefe-b89c16b2f8cb" class=""><strong>Chapter 7 - The Ultimate Challenge</strong></p><ul id="7644676c-051e-47e4-b858-9603a5599449" class="bulleted-list"><li>When Yeo&#x27;s special assistant Tsao Chieh quickly succumbed to liver cancer, Yeo felt a personal loss and rekindled his long-held interest in medicine. He had initially signed up for medical studies but realised there were no overseas scholarships in medicine and hence made the switch to science.</li></ul><ul id="9d47a3ac-1068-4591-8681-e487775355c0" class="bulleted-list"><li>He eventually went on to found the National Science and Technology Board, the predecessor to A*Star. He called it Singapore&#x27;s ultimate challenge - the quest to save lives.</li></ul><ul id="29feac43-0286-4900-90aa-b1c2f32d90fc" class="bulleted-list"><li>His logic was that for Singapore to be ahead of its neighbours, we need to focus on an area with high barrier to entry, and medical sciences is the most complex from a technological point of view</li></ul><ul id="a88296ec-0bb9-46c4-b502-9f66145650d3" class="bulleted-list"><li>Secondly, if Singapore could develop a research component as well as the manufacturing component, it would help to keep the manufacturing in Singapore. R&amp;D also creates the most high-value jobs, with the benefits of generating further downstream flow of jobs, such as nursing, data analytics.</li></ul><ul id="a16071f5-a398-4d4c-9da1-19f6e0dfd62f" class="bulleted-list"><li>Said scientist Edward Holmes: &quot;The focus has been on what we can do in Singapore that we can&#x27;t do in the US and in the UK. While Singapore is a tiny place, it represents probably a quarter of the world&#x27;s population if you think of the Chinese, the Malay and the Indian populations here&quot;.</li></ul><ul id="37d8720b-2149-4f86-a7b3-892a0000c1c3" class="bulleted-list"><li>Cancer specialist John Wong said: &quot;If we want Japan to do all the R&amp;D and we import the results from Japan, it might work, but that means we&#x27;ll always be 15 years behind Japan. Or we can actually be working to solve the problem ourselves. To me, research is not a luxury.&quot;</li></ul><p id="65a14d18-91d7-4f5f-8e2c-efbff1b1438e" class="">
+</p><p id="807fd2b8-48ff-41bd-b834-244be8cd416c" class=""><strong>Chapter 8 - The Talent Thief</strong></p><ul id="f1585012-9af6-4fc7-bd93-8cf32a162b1b" class="bulleted-list"><li>One of the most controversial mark in Philip Yeo&#x27;s career is the public spat with MP Chng Hee Kok. Yeo took the unprecedented step of naming the bond breakers for EDB and NCB. Chng criticised this action, saying that it was too harsh and bond-breaking is common practice with the 100 top corporations in America.</li></ul><ul id="ffe1649d-9d58-40f7-b4f5-c2cb913f064d" class="bulleted-list"><li>In return, Philip Yeo accused Chng of sharing the same values as these scholars and ask him to resign from public office.</li></ul><ul id="ed4d4405-4fd2-4cea-99d1-fad2552c4d09" class="bulleted-list"><li>EDB alumni-turned-politician David Lim defended Yeo, argued that a scholarship is more than a commercial agreement to be settled by payment of money. It carries with it prestige and honour and an equal measure of responsibility to return to serve.</li></ul><p id="08cd38ed-8900-44c6-ae2d-e0df460e2c82" class="">
+</p><p id="e947cccb-f1dc-45b9-bf30-fcdea3b570b5" class=""><strong>Chapter 9 - Momento Mori</strong></p><ul id="88d67ed8-fb44-4b11-a301-704fcddf1c45" class="bulleted-list"><li>Philip Yeo set up his own business, Economic Development Innovations Singapore in 2013. It is not difficult for an MBA, consultant, or economist to come up with simple plan on what a location has unique competitive advantages for. It is quite another thing to go out and execute the plan and build an industry.</li></ul><ul id="3d0fe89d-0239-4b2b-b759-e0c74225e2da" class="bulleted-list"><li>One of his favourite sayings is: &quot;If I have to tell you how to do it, I might as well do it myself&quot;. He would tell you patiently why this needs to be done, but he will leave you to figure out how to do it and what needs to be done.</li></ul><ul id="07bbb3c5-d176-4f5e-96d6-05710f83a869" class="bulleted-list"><li>Like Dr Goh, Yeo did not believe people can change. So the best way to change an organisation was to burn it down and start afresh.</li></ul><ul id="1afd48ee-cece-4960-8811-0396dd4d8266" class="bulleted-list"><li>He also advocates for a flat hierarchy and get rid of the middle staffers, which he calls &quot;eunuchs&quot;(high level managers) to emperors (CEOs).</li></ul></div></article></body></html>

@@ -1472,3 +1472,53 @@ hr {
         display: none;
     }
 }
+
+
+.Neither_Civil_Nor_Servant {
+    background-image: url(book/Neither_Civil_Nor_Servant/Neither\ Civil\ Nor\ Servant.png);
+    width: 15vw;
+    height: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 1024px) {
+    .Neither_Civil_Nor_Servant {
+        background-image: url(book/Neither_Civil_Nor_Servant/Neither\ Civil\ Nor\ Servant.png);
+        width: 15vw;
+        height: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 500px) {
+    .Neither_Civil_Nor_Servant {
+        background-image: url(book/Neither_Civil_Nor_Servant/Neither\ Civil\ Nor\ Servant.png);
+        width: 15vw;
+        height: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
